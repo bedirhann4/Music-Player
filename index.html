@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <img src="" id="music-image">
+        <audio src="" id="audio"></audio>
+        <div class="music-details">
+            <p class="title"></p>
+            <p class="singer"></p>
+        </div>
+        <div class="progress">
+            <input type="range" id="progress-bar">
+            <div class="times">
+                <span id="current-time">00:00</span>
+                <span id="duration-time">00:00</span>
+            </div>
+        </div>
+        <div class="controls">
+            <i id="repeat" class="fa-solid fa-repeat"></i>
+            <i id="prev" class="fa-sharp fa-solid fa-backward-step"></i>
+            <i id="play" class="fa-solid fa-play"></i>
+            <i id="next" class="fa-solid fa-forward-step"></i>
+            <i id="shuffle" class="fa-solid fa-shuffle"></i>
+        </div>
+        <hr>
+        <div class="volume-area">
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="ses">
+                <i id="volume-icon" class="fa-solid fa-volume-high"></i>
+                <!-- <i class="fa-solid fa-volume-xmark"></i> -->
+                <input type="range" id="volume" max="100" min="0">
+            </div>
+        </div>
+        <div class="side-bar">
+            <header>
+                <div class="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <h1>Music List</h1>
+            </header>
+            <div class="menu">
+                <!-- <div class="item">
+                    <div class="name"><i class="fa-solid fa-music"></i> Antartica - Andrew Applepie</div>
+                    <div class="long">3:26</div>
+                </div>
+                <hr> -->
+            </div>
+        </div>
+    </div>
+    <script src="music.js"></script>
+    <script src="musicplayer.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

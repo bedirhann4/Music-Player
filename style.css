@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+   }
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    box-shadow: 1px 0px 32px -2px rgba(77,68,77,1);
+    padding: 2px;
+    width: 30%;
+    position: relative;
+    border-radius: 3px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+}
+.controls i{
+    font-size: 30px;
+    padding: 10px;
+    color: firebrick;
+    cursor: pointer;
+}
+#music-image{
+    width: 100%;
+    border-radius: 3px;
+    user-select: none;
+}
+#progress-bar{
+    width: 100%;
+    background-color: black;
+    cursor: pointer;
+}
+.progress .times{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+}
+.music-details{
+    display: flex;
+    justify-content: center;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+#repeat{
+    font-size: 18px;
+    color: black;
+}
+#shuffle{
+    font-size: 18px;
+    color: black;
+    opacity: 0.3;
+    pointer-events: none;
+}
+.volume-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    user-select: none;
+}
+.three-line{
+    font-size: 20px;
+    background-color: steelblue;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.fa-bars{
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.side-bar{
+    background: #1b1a1b;
+    backdrop-filter: blur(15px);
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+}
+.side-bar::-webkit-scrollbar {
+    width: 0px;
+}
+.side-bar.active{
+    left: 0;
+}
+h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    padding-bottom: 13px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+.close-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 23px;
+    right:  0px;
+    margin: 13px 10px;
+    cursor: pointer;
+}
+.menu-btn{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.main h1{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 60px;
+    text-align: center;
+    line-height: 80px;
+}
+@media (max-width: 900px){
+    .main h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
+}
+header{
+    background: #33363a;
+}
+.side-bar header h1{
+    padding-top: 15px;
+}
+.item{
+    background-color: silver;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.item:hover{
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
